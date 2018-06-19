@@ -43,12 +43,12 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
+    text-align: center;
 }
 
 .primary-heading {
     text-transform: uppercase;
     white-space: nowrap;
-    text-align: center;
     backface-visibility: hidden;
 }
 
@@ -66,6 +66,7 @@ body {
     letter-spacing: 10px;
     font-weight: 400;
     animation: fadeInLeft 1s ease-out;
+    margin-bottom: 25px;
 }
 
 @keyframes fadeInRight {
@@ -88,4 +89,67 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    position: relative;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 21px rgba(0, 0, 0, 0.207);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 11px rgba(0, 0, 0, 0.207);
+}
+
+.btn-light {
+    background-color: #fff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transition: all .4s;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-light::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.2) scaleY(1.1);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: fadeInBottom .5s ease-in .5s;
+    animation-fill-mode: backwards;
 }
