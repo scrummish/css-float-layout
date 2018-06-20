@@ -1,0 +1,15 @@
+{
+  "name": "core-css",
+  "version": "1.0.0",
+  "description": "Sample CSS work",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Sergio Rocha",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
