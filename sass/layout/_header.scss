@@ -1,0 +1,30 @@
+.header {
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(
+        to left top, 
+        $color-purple,  
+        $color-purple-dark), 
+        url(../img/header_background.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+
+     &__logo-container {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    } 
+
+     &__logo {
+        height: 4rem;
+    } 
+
+     &__text-and-button-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    } 
+}
