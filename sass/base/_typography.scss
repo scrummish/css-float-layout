@@ -21,10 +21,41 @@ body {
 
     &--sub {
         display: block;
-        font-size: 1.6rem;
+        font-size: $font-size-default;
         letter-spacing: 1rem;
         font-weight: 400;
         animation: fadeInLeft 1s ease-out;
         margin-bottom: 2.5rem;
     } 
+}
+
+.secondary-heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-purple, $color-purple-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover {
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+        transform: skewY(1deg) skewX(10deg) scale(1.1);
+    }
+}
+
+.tertiary-heading {
+    font-size: $font-size-default;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $font-size-default;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 }
