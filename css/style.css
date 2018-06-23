@@ -181,6 +181,23 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
 
+.info-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .info-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .info-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    background-image: linear-gradient(to right, rgba(170, 86, 255, 0.815), #170040f2);
+    -webkit-background-clip: text;
+    color: transparent; }
+
 .header {
   position: relative;
   height: 90vh;
@@ -202,7 +219,7 @@ body {
     color: #b9ccfd; }
 
 .row {
-  max-width: 128em;
+  max-width: 114em;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 3em; }
@@ -236,4 +253,12 @@ body {
 .about-section {
   background-color: #f7f7f7;
   margin-top: -14.5vh;
-  padding-top: 20rem; }
+  padding: 20rem 0; }
+
+.more-info-section {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.815), #170040f2), url(../img/header_background.jpg);
+  margin-top: -11rem;
+  transform: skewY(-3.36deg); }
+  .more-info-section > * {
+    transform: skewY(3.36deg); }

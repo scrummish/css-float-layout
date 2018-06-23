@@ -1,5 +1,19 @@
 .about-section {
     background-color: $color-off-white;
     margin-top: -14.5vh;
-    padding-top: 20rem;
+    padding: 20rem 0;
+}
+
+.more-info-section {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom,
+    $color-purple,  
+    $color-purple-dark), 
+    url(../img/header_background.jpg);
+    margin-top: -11rem;
+    transform: skewY(-3.36deg);
+
+    & > * {
+        transform: skewY(3.36deg);
+    }
 }
