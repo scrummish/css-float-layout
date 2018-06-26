@@ -3,9 +3,9 @@
     height: 90vh;
     background-image: linear-gradient(
         to left top, 
-        $color-purple,  
-        $color-purple-dark), 
-        url(../img/header_background.jpg);
+        rgba($color-purple-dark, 0.8),  
+        $color-purple-dark 50%), 
+        url(../img/moon.jpg);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
