@@ -66,7 +66,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ff0790, #110529);
+  background-image: linear-gradient(to right, #1B94FB, #110529);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -218,6 +218,32 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 50rem; }
+  .card__pic {
+    background-size: cover;
+    background-blend-mode: hue;
+    height: 23rem;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%); }
+    .card__pic--1 {
+      background-image: linear-gradient(to right bottom, #1B94FB, #110529), url(../img/esports.jpg); }
+    .card__pic--logo {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 100%; }
+    .card__pic--2 {
+      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.715), #110529), url(../img/space.jpg); }
+    .card__pic--3 {
+      background-image: linear-gradient(to right bottom, #ff0790, #110529), url(../img/realestate.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    top: 12rem;
+    right: 2rem; }
   .card__face {
     position: absolute;
     color: white;
@@ -227,7 +253,8 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    overflow: hidden; }
     .card__face--front {
       background-color: #fff; }
     .card__face--back {
@@ -237,7 +264,7 @@ body {
       .card__face--back-2 {
         background: linear-gradient(to right bottom, rgba(170, 86, 255, 0.715), #110529); }
       .card__face--back-3 {
-        background: linear-gradient(to right bottom, #00ffd0, #110529); }
+        background: linear-gradient(to right bottom, #ff0790, #110529); }
   .card:hover .card__face--front {
     transform: rotateY(-180deg); }
   .card:hover .card__face--back {
@@ -249,6 +276,7 @@ body {
   background-image: linear-gradient(to left top, rgba(17, 5, 41, 0.8), #110529 50%), url(../img/moon.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%); }
   .header__logo-container {
     position: absolute;

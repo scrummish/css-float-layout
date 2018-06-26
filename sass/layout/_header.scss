@@ -8,6 +8,7 @@
         url(../img/moon.jpg);
     background-size: cover;
     background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
 
      &__logo-container {

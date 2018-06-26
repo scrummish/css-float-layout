@@ -1,8 +1,49 @@
 .card {
+    // For card functionality
     position: relative;
     perspective: 150rem;
     -moz-perspective: 150rem;
     height: 50rem;
+    
+    // For front side of card
+    &__pic {
+        background-size: cover;
+        background-blend-mode: hue;
+        height: 23rem;
+        position: relative;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-blue, $color-purple-dark), url(../img/esports.jpg);
+        }
+
+        &--logo {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 100%;
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-purple, $color-purple-dark), url(../img/space.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-pink, $color-purple-dark), url(../img/realestate.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        position: absolute;
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 300;
+        top: 12rem;
+        right: 2rem;
+    }
     
     &__face {
         position: absolute;
@@ -14,6 +55,7 @@
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
 
         &--front {
             background-color: $color-white;
@@ -31,7 +73,7 @@
             }
 
             &-3 {
-                background: linear-gradient(to right bottom, $color-green-light, $color-purple-dark);
+                background: linear-gradient(to right bottom, $color-pink, $color-purple-dark);
             }
         }
     }
