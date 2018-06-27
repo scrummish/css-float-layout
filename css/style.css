@@ -34,7 +34,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #110529; }
+  background-color: #fff; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -50,7 +50,7 @@ body {
   .primary-heading--main {
     display: block;
     font-size: 4rem;
-    letter-spacing: 1.5rem;
+    letter-spacing: .9rem;
     font-weight: 400;
     animation: fadeInRight 1s ease-out; }
   .primary-heading--sub {
@@ -66,7 +66,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #1B94FB, #110529);
+  background-image: linear-gradient(to right, #ff0790, #110529);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -100,7 +100,10 @@ body {
 .utility-font-color-pink {
   color: #ff0790; }
 
-.utility-font-color-green {
+.utility-font-color-blue {
+  color: rgba(170, 86, 255, 0.715); }
+
+.utility-font-color-purple {
   color: #00ffd0; }
 
 .utility-change-color-and-enlarge {
@@ -241,9 +244,21 @@ body {
     position: absolute;
     color: #fff;
     text-transform: uppercase;
+    text-align: right;
     font-weight: 300;
     top: 12rem;
-    right: 2rem; }
+    right: 2rem;
+    width: 80%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.8), rgba(17, 5, 41, 0.8)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.8), rgba(17, 5, 41, 0.8)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(255, 7, 144, 0.8), rgba(17, 5, 41, 0.8)); }
   .card__face {
     position: absolute;
     color: white;
@@ -304,6 +319,8 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 5em; }
+  .row .col-1-of-1 {
+    width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 5em) / 2); }
   .row .col-2-of-2 {

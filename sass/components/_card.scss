@@ -43,6 +43,25 @@
         font-weight: 300;
         top: 12rem;
         right: 2rem;
+        width: 80%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.8), rgba($color-purple-dark,.8));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-blue,.8), rgba($color-purple-dark,.8));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-pink,.8), rgba($color-purple-dark,.8));
+        }
     }
     
     &__face {
