@@ -3,7 +3,7 @@
     position: relative;
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 50rem;
+    height: 52rem;
     
     // For front side of card
     &__pic {
@@ -14,10 +14,6 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
 
-        &--1 {
-            background-image: linear-gradient(to right bottom, $color-blue, $color-purple-dark), url(../img/esports.jpg);
-        }
-
         &--logo {
             position: absolute;
             top: 50%;
@@ -25,12 +21,16 @@
             width: 100%;
         }
 
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-blue, $color-blue-dark), url(../img/esports.jpg);
+        }
+
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-purple, $color-purple-dark), url(../img/space.jpg);
+            background-image: linear-gradient(to right bottom, $color-purple-solid, $color-purple-solid-dark), url(../img/space.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-pink, $color-purple-dark), url(../img/realestate.jpg);
+            background-image: linear-gradient(to right bottom, $color-pink, $color-pink-dark), url(../img/realestate.jpg);
         }
     }
 
@@ -52,22 +52,43 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.8), rgba($color-purple-dark,.8));
+            background-image: linear-gradient(to right bottom, rgba($color-blue,.8), rgba($color-blue-dark,.8));
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-blue,.8), rgba($color-purple-dark,.8));
+            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.8), rgba($color-purple-solid-dark,.8));
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-pink,.8), rgba($color-purple-dark,.8));
+            background-image: linear-gradient(to right bottom, rgba($color-pink,.8), rgba($color-pink-dark,.8));
+        }
+    }
+
+    &__detail {
+        color: $color-base-font;
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-light-grey;
+                }
+            }
         }
     }
     
     &__face {
         position: absolute;
         color: white;
-        height: 50rem;
+        height: 52rem;
         font-size: 2rem;
         transition: all .8s;
         width: 100%;
@@ -84,15 +105,15 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background: linear-gradient(to right bottom, $color-blue, $color-purple-dark);
+                background: linear-gradient(to right bottom, $color-blue, $color-blue-dark);
             }
 
             &-2 {
-                background: linear-gradient(to right bottom, $color-purple, $color-purple-dark);
+                background: linear-gradient(to right bottom, $color-purple-solid, $color-purple-solid-dark);
             }
 
             &-3 {
-                background: linear-gradient(to right bottom, $color-pink, $color-purple-dark);
+                background: linear-gradient(to right bottom, $color-pink, $color-pink-dark);
             }
         }
     }
@@ -103,5 +124,30 @@
 
     &:hover &__face--back {
         transform: rotateY(0);
+    }
+
+    &__action-box {
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__action-sub-box {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: $color-white;
+    }
+
+    &__action-heading {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__action-sub-heading {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }

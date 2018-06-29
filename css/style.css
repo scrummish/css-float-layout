@@ -66,7 +66,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ff0790, #110529);
+  background-image: linear-gradient(to right, #5643fa, #110529);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
@@ -105,6 +105,9 @@ body {
 
 .utility-font-color-purple {
   color: #00ffd0; }
+
+.utility-remove-decoration {
+  text-decoration: none; }
 
 .utility-change-color-and-enlarge {
   color: #1B94FB;
@@ -220,7 +223,7 @@ body {
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem; }
+  height: 52rem; }
   .card__pic {
     background-size: cover;
     background-blend-mode: hue;
@@ -228,17 +231,17 @@ body {
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%); }
-    .card__pic--1 {
-      background-image: linear-gradient(to right bottom, #1B94FB, #110529), url(../img/esports.jpg); }
     .card__pic--logo {
       position: absolute;
       top: 50%;
       transform: translate(0, -50%);
       width: 100%; }
+    .card__pic--1 {
+      background-image: linear-gradient(to right bottom, #1B94FB, #5643fa), url(../img/esports.jpg); }
     .card__pic--2 {
-      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.715), #110529), url(../img/space.jpg); }
+      background-image: linear-gradient(to right bottom, #AA56FF, #6300c7), url(../img/space.jpg); }
     .card__pic--3 {
-      background-image: linear-gradient(to right bottom, #ff0790, #110529), url(../img/realestate.jpg); }
+      background-image: linear-gradient(to right bottom, #ff0790, #ad005f), url(../img/realestate.jpg); }
   .card__heading {
     font-size: 2.8rem;
     position: absolute;
@@ -254,15 +257,28 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.8), rgba(17, 5, 41, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.8), rgba(86, 67, 250, 0.8)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.8), rgba(17, 5, 41, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.8), rgba(99, 0, 199, 0.8)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(255, 7, 144, 0.8), rgba(17, 5, 41, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 7, 144, 0.8), rgba(173, 0, 95, 0.8)); }
+  .card__detail {
+    color: #707070;
+    padding: 3rem; }
+    .card__detail ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__detail ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__detail ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
   .card__face {
     position: absolute;
     color: white;
-    height: 50rem;
+    height: 52rem;
     font-size: 2rem;
     transition: all .8s;
     width: 100%;
@@ -275,15 +291,32 @@ body {
     .card__face--back {
       transform: rotateY(180deg); }
       .card__face--back-1 {
-        background: linear-gradient(to right bottom, #1B94FB, #110529); }
+        background: linear-gradient(to right bottom, #1B94FB, #5643fa); }
       .card__face--back-2 {
-        background: linear-gradient(to right bottom, rgba(170, 86, 255, 0.715), #110529); }
+        background: linear-gradient(to right bottom, #AA56FF, #6300c7); }
       .card__face--back-3 {
-        background: linear-gradient(to right bottom, #ff0790, #110529); }
+        background: linear-gradient(to right bottom, #ff0790, #ad005f); }
   .card:hover .card__face--front {
     transform: rotateY(-180deg); }
   .card:hover .card__face--back {
     transform: rotateY(0); }
+  .card__action-box {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .card__action-sub-box {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff; }
+  .card__action-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__action-sub-heading {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .header {
   position: relative;
