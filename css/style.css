@@ -223,7 +223,7 @@ body {
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 52rem; }
+  height: 50rem; }
   .card__pic {
     background-size: cover;
     background-blend-mode: hue;
@@ -257,11 +257,11 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.8), rgba(86, 67, 250, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.85), rgba(86, 67, 250, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.8), rgba(99, 0, 199, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.85), rgba(99, 0, 199, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(255, 7, 144, 0.8), rgba(173, 0, 95, 0.8)); }
+      background-image: linear-gradient(to right bottom, rgba(255, 7, 144, 0.85), rgba(173, 0, 95, 0.85)); }
   .card__detail {
     color: #707070;
     padding: 3rem; }
@@ -278,7 +278,7 @@ body {
   .card__face {
     position: absolute;
     color: white;
-    height: 52rem;
+    height: 50rem;
     font-size: 2rem;
     transition: all .8s;
     width: 100%;
@@ -388,5 +388,5 @@ body {
 
 .prices-section {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 20rem 0;
   margin-top: -7rem; }

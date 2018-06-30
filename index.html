@@ -1,201 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/icon-fonts-2.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icon-font.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
-    <title>Sergio Rocha</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+        rel="stylesheet">
+  <link href="css/icon-fonts-2.css"
+        rel="stylesheet">
+  <link href="css/style.css"
+        rel="stylesheet">
+  <link href="css/icon-font.css"
+        rel="stylesheet">
+  <link href="img/favicon.png"
+        rel="shortcut icon"
+        type="image/png">
+  <title>Sergio Rocha</title>
 </head>
-
 <body>
-    <header class="header">
-        <div class="header__logo-container">
-            <img src="img/logo1.png" alt="Logo" class="header__logo">
+  <header class="header">
+    <div class="header__logo-container"><img alt="Logo"
+         class="header__logo"
+         src="img/logo1.png"></div>
+    <div class="header__text-and-button-box utility-center-text">
+      <h1 class="primary-heading"><span class="primary-heading--main">Sergio Rocha</span> <span class="primary-heading--sub"><span class="utility-font-color-blue">Fullstack web developer</span> <span class="utility-change-color-and-enlarge">|</span>
+      <span class="utility-font-color-pink">pro gamer</span> <span class="utility-change-color-and-enlarge">|</span> <span class="utility-font-color-purple">artist</span></span></h1><a class="btn btn--light btn--animated"
+           href="#">See more</a>
+    </div>
+  </header>
+  <main>
+    <section class="about-section">
+      <div class="utility-center-text utility-margin-bottom-large">
+        <h2 class="secondary-heading">WHO AM I</h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="tertiary-heading utility-margin-bottom-small">JavaScript Geek</h3>
+          <p class="paragraph">I love javascript! So naturally I tend to gravitate towards JS frameworks and libraries but I do work with Ruby based technologies as well. I am a full stack web developer with a passion for making things both
+          beautiful and efficient. I am known for throwing myself into an environment and getting things done, whether it requires diving in headfirst to learn a new framework/technology, to leading a team, to asking the right questions that help me
+          identify important elements for success. I use my keen sense of focus to solve problems that come my way. As a previous pro level video game competitor, I found that my focus was what separated myself from the many other great players and
+          lead me to all my tournament wins. Now my focus is web development and I am excited to see what we can accomplish.</p>
+          <h3 class="tertiary-heading utility-margin-bottom-small">100% CSS</h3>
+          <p class="paragraph">All the animation and interactivity on this page is done with 100% CSS, no JavaScript at all. Check out the source code!</p><a class="btn-text"
+               href="https://github.com/scrummish/css-float-layout">See the code &rarr;</a>
         </div>
-        <div class="header__text-and-button-box utility-center-text">
-            <h1 class="primary-heading">
-                <span class="primary-heading--main">Sergio Rocha</span>
-                <span class="primary-heading--sub"> <span class="utility-font-color-blue">Fullstack web developer</span> <span class="utility-change-color-and-enlarge">|</span> <span class="utility-font-color-pink">pro gamer</span> <span class="utility-change-color-and-enlarge">|</span> <span class="utility-font-color-purple">artist</span></span>
-            </h1>
-            <a href="#" class="btn btn--light btn--animated">
-                See more
-            </a>
+        <div class="col-1-of-2">
+          <div class="composition"><img alt="Photo Google"
+               class="composition__photo composition__photo--1"
+               src="img/react.jpg"> <img alt="Photo SEO"
+               class="composition__photo composition__photo--3"
+               src="img/frontend.png"> <img alt="Photo Gizmos"
+               class="composition__photo composition__photo--2"
+               src="img/node.png"></div>
         </div>
-    </header>
-    <main>
-        <section class="about-section">
-            <div class="utility-center-text utility-margin-bottom-large">
-                <h2 class="secondary-heading">WHO AM I</h2>
+      </div>
+    </section>
+    <section class="more-info-section">
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="info-box">
+            <i class="icon-basic-elaboration-todolist-check info-box__icon"></i>
+            <h3 class="tertiary-heading utility-margin-bottom-small">testing</h3>
+            <p class="info-box__text">I save future headaches by avoiding bugs with well tested code. (jest, enzyme, mocha, chai)</p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="info-box">
+            <i class="icon-basic-elaboration-folder-refresh info-box__icon"></i>
+            <h3 class="tertiary-heading utility-margin-bottom-small">Modularity</h3>
+            <p class="info-box__text">Whether styling (sass, less, BEM) or DOM manipulation, I write modular, reusable, and scalable code.</p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="info-box">
+            <i class="icon-basic-elaboration-document-check info-box__icon"></i>
+            <h3 class="tertiary-heading utility-margin-bottom-small">Documentation</h3>
+            <p class="info-box__text">Well documented easy to understand code makes life easier for everyone.</p>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="info-box">
+            <i class="icon-basic-elaboration-calendar-search info-box__icon"></i>
+            <h3 class="tertiary-heading utility-margin-bottom-small">SEO</h3>
+            <p class="info-box__text">Search Engine Optimization is always a priority! All my work adheres to seo best practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prices-section">
+      <div class="utility-center-text utility-margin-bottom-large">
+        <h2 class="secondary-heading">Portfolio</h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__face card__face--front">
+              <div class="card__pic card__pic--1">
+                &nbsp;
+              </div>
+              <h4 class="card__heading"><span class="card__heading-span card__heading-span--1">eSports: Competitive Advantage</span></h4>
+              <div class="card__detail">
+                <ul>
+                  <li>Fullstack Mern App</li>
+                  <li>Reactjs, Expressjs, Mongodb, Mongoose, Material UI</li>
+                  <li>(in beta)</li>
+                </ul>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <h3 class="tertiary-heading utility-margin-bottom-small">JavaScript Geek</h3>
-                    <p class="paragraph">
-                        I love javascript! So naturally I tend to gravitate towards JS frameworks and libraries but I do work with Ruby based technologies as well. I am a full stack web developer with a passion for making things both beautiful and efficient. I am known for throwing myself into an environment and getting things done, whether it requires diving in headfirst to learn a new framework/technology, to leading a team, to asking the right questions that help me identify important elements for success. I use my keen sense of focus to solve problems that come my way. As a previous pro level video game competitor, I found that my focus was what separated myself from the many other great players and lead me to all my tournament wins. Now my focus is web development and I am excited to see what we can accomplish.
-                    </p>
-                    <h3 class="tertiary-heading utility-margin-bottom-small">100% CSS</h3>
-                    <p class="paragraph">
-                        All the animation and interactivity on this page is done with 100% CSS, no JavaScript at all. Check out the source code!
-                    </p>
-                    <a href="https://github.com/scrummish/css-float-layout" class="btn-text">See the code &rarr;</a>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="composition">
-                        <img src="img/react.jpg" alt="Photo Google" class="composition__photo composition__photo--1">
-                        <img src="img/frontend.png" alt="Photo SEO" class="composition__photo composition__photo--3">
-                        <img src="img/node.png" alt="Photo Gizmos" class="composition__photo composition__photo--2">
-                    </div>
-                </div>
+            <div class="card__face card__face--back card__face--back-1">
+              <div class="card__action-box">
+                <div class="card__action-sub-box">
+                  <p class="card__action-heading">see the code on</p>
+                  <p class="card__action-sub-heading"><a class="utility-remove-decoration utility-font-color-purple"
+                     href="https://github.com/scrummish/Competitive-Advantage-Back-End-"
+                     target="_blank">github</a></p>
+                  <p class="card__action-heading">or</p>
+                </div><a class="btn btn--light"
+                     href="http://e-sports-advantage.herokuapp.com/"
+                     target="_blank">Visit Here</a>
+              </div>
             </div>
-        </section>
-        <section class="more-info-section">
-            <div class="row">
-                <div class="col-1-of-4">
-                    <div class="info-box">
-                        <i class="icon-basic-elaboration-todolist-check info-box__icon"></i>
-                        <h3 class="tertiary-heading utility-margin-bottom-small">testing</h3>
-                        <p class="info-box__text">
-                        I save future headaches by avoiding bugs with well tested code. (jest, enzyme, mocha, chai)
-                        </p>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="info-box">
-                        <i class="icon-basic-elaboration-folder-refresh info-box__icon"></i>
-                        <h3 class="tertiary-heading utility-margin-bottom-small">Modularity</h3>
-                        <p class="info-box__text">
-                            Whether styling (sass, less, BEM) or DOM manipulation, I write modular, reusable, and scalable code. 
-                        </p>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="info-box">
-                        <i class="icon-basic-elaboration-document-check info-box__icon"></i>
-                        <h3 class="tertiary-heading utility-margin-bottom-small">Documentation</h3>
-                        <p class="info-box__text">
-                            Well documented easy to understand code makes life easier for everyone.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="info-box">
-                        <i class="icon-basic-elaboration-document-check info-box__icon"></i>
-                        <h3 class="tertiary-heading utility-margin-bottom-small">SEO</h3>
-                        <p class="info-box__text">
-                            Search Engine Optimization is always a priority! All my work adheres to seo best practices.
-                        </p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__face card__face--front">
+              <div class="card__pic card__pic--2"><img alt="Logo"
+                   class="card__pic--logo"
+                   src="./img/space2.png"></div>
+              <h4 class="card__heading"><span class="card__heading-span card__heading-span--2">Space Invaders 18'</span></h4>
+              <div class="card__detail">
+                <ul>
+                  <li>Browser Based Video Game</li>
+                  <li>JavaScript ES6, CSS3, HTML5 Canvas</li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <section class="prices-section">
-            <div class="utility-center-text utility-margin-bottom-large">
-                <h2 class="secondary-heading">Portfolio</h2>
+            <div class="card__face card__face--back card__face--back-2">
+              <div class="card__action-box">
+                <div class="card__action-sub-box">
+                  <p class="card__action-heading">see the code on</p>
+                  <p class="card__action-sub-heading"><a class="utility-remove-decoration utility-font-color-purple"
+                     href="https://github.com/scrummish/Space-Invaders-2018"
+                     target="_blank">github</a></p>
+                  <p class="card__action-heading">or</p>
+                </div><a class="btn btn--light"
+                     href="https://scrummish.github.io/Space-Invaders-2018/"
+                     target="__blank">Play Here</a>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__face card__face--front">
-                            <div class="card__pic card__pic--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">eSports: Competitive Advantage</span>
-                            </h4>
-                            <div class="card__detail">
-                                <ul>
-                                    <li>Fullstack Mern App</li>
-                                    <li>Reactjs, Expressjs, Mongodb, Mongoose, Material UI</li>
-                                    <li>(in beta)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__face card__face--back card__face--back-1">
-                                <div class="card__action-box">
-                                        <div class="card__action-sub-box">
-                                            <p class="card__action-heading">see the code on</p>
-                                            <p class="card__action-sub-heading">
-                                                <a href="#" class="utility-remove-decoration utility-font-color-purple">github</a>
-                                            </p>
-                                            <p class="card__action-heading">or</p>
-                                        </div>
-                                        <a href="#" class="btn btn--light">Visit Here</a>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__face card__face--front">
-                            <div class="card__pic card__pic--2">
-                                <img src="./img/space2.png" alt="Logo" class="card__pic--logo">
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--2">Space Invaders 18'</span>
-                            </h4>
-                            <div class="card__detail">
-                                <ul>
-                                    <li>Browser Based Video Game</li>
-                                    <li>JavaScript ES6, CSS3, HTML5 Canvas</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__face card__face--back card__face--back-2">
-                                <div class="card__action-box">
-                                        <div class="card__action-sub-box">
-                                            <p class="card__action-heading">see the code on</p>
-                                            <p class="card__action-sub-heading">
-                                                <a href="#" class="utility-remove-decoration utility-font-color-purple">github</a>
-                                            </p>
-                                            <p class="card__action-heading">or</p>
-                                        </div>
-                                        <a href="#" class="btn btn--light">Play Here</a>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__face card__face--front">
-                            <div class="card__pic card__pic--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">Real Estate Lead Generator</span>
-                            </h4>
-                            <div class="card__detail">
-                                <ul>
-                                    <li>Fullstack Multi Page App</li>
-                                    <li>EJS (Templating Language), expressjs, mongodb, mongoose, Less</li>
-                                    <li>(in beta)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__face card__face--back card__face--back-3">
-                                <div class="card__action-box">
-                                        <div class="card__action-sub-box">
-                                            <p class="card__action-heading">see the code on</p>
-                                            <p class="card__action-sub-heading">
-                                                <a href="#" class="utility-remove-decoration utility-font-color-purple">github</a>
-                                            </p>
-                                            <p class="card__action-heading">or</p>
-                                        </div>
-                                        <a href="#" class="btn btn--light">Visit Here</a>
-                                    </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__face card__face--front">
+              <div class="card__pic card__pic--3">
+                &nbsp;
+              </div>
+              <h4 class="card__heading"><span class="card__heading-span card__heading-span--3">Real Estate Lead Generator</span></h4>
+              <div class="card__detail">
+                <ul>
+                  <li>Fullstack Multi Page App</li>
+                  <li>EJS (Templating Language), expressjs, mongodb, mongoose, Less</li>
+                  <li>(in beta)</li>
+                </ul>
+              </div>
             </div>
-        </section>
-    </main>
+            <div class="card__face card__face--back card__face--back-3">
+              <div class="card__action-box">
+                <div class="card__action-sub-box">
+                  <p class="card__action-heading">see the code on</p>
+                  <p class="card__action-sub-heading"><a class="utility-remove-decoration utility-font-color-purple"
+                     href="https://github.com/scrummish/Real-Estate-Lead-Generator"
+                     target="_blank">github</a></p>
+                  <p class="card__action-heading">or</p>
+                </div><a class="btn btn--light"
+                     href="http://realestateleadgenerator.herokuapp.com/"
+                     target="_blank">Visit Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>

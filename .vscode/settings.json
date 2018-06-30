@@ -1,0 +1,5 @@
+{
+    "tidyHtml.optionsTidy": {
+        "drop-empty-elements": false
+    }
+}

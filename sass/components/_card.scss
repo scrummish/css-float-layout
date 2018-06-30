@@ -3,7 +3,7 @@
     position: relative;
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 52rem;
+    height: 50rem;
     
     // For front side of card
     &__pic {
@@ -52,15 +52,15 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-blue,.8), rgba($color-blue-dark,.8));
+            background-image: linear-gradient(to right bottom, rgba($color-blue,.85), rgba($color-blue-dark,.85));
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.8), rgba($color-purple-solid-dark,.8));
+            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.85), rgba($color-purple-solid-dark,.85));
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-pink,.8), rgba($color-pink-dark,.8));
+            background-image: linear-gradient(to right bottom, rgba($color-pink,.85), rgba($color-pink-dark,.85));
         }
     }
 
@@ -88,7 +88,7 @@
     &__face {
         position: absolute;
         color: white;
-        height: 52rem;
+        height: 50rem;
         font-size: 2rem;
         transition: all .8s;
         width: 100%;
@@ -126,6 +126,7 @@
         transform: rotateY(0);
     }
 
+    // Back side of card
     &__action-box {
         position: absolute;
         width: 90%;
