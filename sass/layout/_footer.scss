@@ -10,8 +10,19 @@
     }
     
     &__logo {
-        height: 15rem;
-        width: auto;
+        font-size: 5rem;
+        font-weight: 900;
+        display: inline-block;
+        background-image: linear-gradient(to right bottom, $color-pink, $color-blue-dark, $color-blue, $color-purple-solid);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__brackets {
+        font-size: .9em;
+        -webkit-text-stroke: .5px $color-white;
+        color: $color-blue-dark;
+        text-shadow: 1px 1px 2px black, 0 0 25px $color-blue, 0 0 15px $color-blue;
     }
 
     &__item {
@@ -51,7 +62,7 @@
     }
 
     &__copy {
-        border-top: 1px solid $color-light-blue;
+        border-top: .5px solid $color-light-blue;
         padding-top: 2rem; 
     }
 }

@@ -445,8 +445,17 @@ body {
     text-align: center;
     margin-bottom: 8rem; }
   .footer__logo {
-    height: 15rem;
-    width: auto; }
+    font-size: 5rem;
+    font-weight: 900;
+    display: inline-block;
+    background-image: linear-gradient(to right bottom, #ff0790, #5643fa, #1B94FB, #AA56FF);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .footer__brackets {
+    font-size: .9em;
+    -webkit-text-stroke: 0.5px #fff;
+    color: #5643fa;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0), 0 0 25px blue, 0 0 15px #1B94FB; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
