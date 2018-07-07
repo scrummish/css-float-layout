@@ -20,9 +20,9 @@
 
     &__brackets {
         font-size: .9em;
-        -webkit-text-stroke: .5px $color-white;
-        color: $color-blue-dark;
-        text-shadow: 1px 1px 2px black, 0 0 25px $color-blue, 0 0 15px $color-blue;
+        -webkit-text-stroke: .5px $color-purple-solid-dark;
+        color: #debdff;
+        text-shadow: 1px 1px 2px black, 0 0 25px $color-blue-dark, 0 0 15px $color-blue-dark;
     }
 
     &__item {
@@ -55,7 +55,7 @@
 
         &:hover,
         &:active {
-            color: $color-blue;
+            color: $color-blue-dark;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: rotate(5deg) scale(1.2);
         }
