@@ -2,7 +2,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
@@ -15,6 +14,7 @@
 @import "components/review";
 @import "components/video";
 
+@import "layout/navigation";
 @import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
