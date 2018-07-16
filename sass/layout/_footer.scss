@@ -8,22 +8,6 @@
         text-align: center;
         margin-bottom: 8rem;
     }
-    
-    &__logo {
-        font-size: 5rem;
-        font-weight: 900;
-        display: inline-block;
-        background-image: linear-gradient(to right bottom, $color-pink, $color-blue-dark, $color-blue, $color-purple-solid);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
-    &__brackets {
-        font-size: .9em;
-        -webkit-text-stroke: .5px $color-purple-solid-dark;
-        color: #debdff;
-        text-shadow: 1px 1px 2px black, 0 0 25px $color-blue-dark, 0 0 15px $color-blue-dark;
-    }
 
     &__item {
         display: inline-block;
@@ -34,7 +18,7 @@
     }
 
     &__nav {
-        border-top: 1px solid $color-light-blue;
+        border-top: 1.5px solid $color-light-blue;
         padding-top: 2rem;
         display: inline-block;
     }

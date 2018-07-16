@@ -22,10 +22,7 @@
     } 
 
      &__text-and-button-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include positionAbsoluteCenter;
         color: $color-light-blue;
     } 
 }
