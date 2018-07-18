@@ -22,17 +22,35 @@
         } 
     } 
 
-     &:active {
+    &:active {
         transform: translateY(-.1rem);
         box-shadow: 0 .5rem 1.1rem rgba($color-black, 0.8);
     } 
 
-     &--light {
+    &--light {
         background-color: $color-white;
         color: $color-purple-dark;
 
         &::after {
             background-color: $color-white;
+        } 
+    }
+
+    &--light {
+        background-color: $color-white;
+        color: $color-purple-dark;
+
+        &::after {
+            background-color: $color-white;
+        } 
+    }
+
+    &--purple {
+        background-image: linear-gradient(to right, $color-blue-dark, $color-purple-dark);
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right, $color-blue-dark, $color-purple-dark);;
         } 
     }
 
