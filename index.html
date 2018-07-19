@@ -18,7 +18,8 @@
   <title>Sergio Rocha</title>
 </head>
 <body>
-  <div class="pop-up">
+  <div class="pop-up"
+       id="pop-up">
     <div class="pop-up__content">
       <div class="pop-up__left-side"><img alt=""
            class="pop-up__img"
@@ -26,6 +27,8 @@
            class="pop-up__img"
            src="img/nat-9.jpg"></div>
       <div class="pop-up__right-side">
+        <a class="pop-up__exit"
+             href="#portfolio-section">&times;</a>
         <h2 class="secondary-heading utility-margin-bottom-small">hhh</h2>
         <h3 class="tertiary-heading utility-margin-bottom-small">hhh</h3>
         <p class="pop-up__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat tenetur unde. Omnis similique soluta labore quasi ea facilis tenetur culpa harum veritatis incidunt modi voluptatibus error, illo voluptates!
@@ -48,7 +51,7 @@
           <a class="navigation__link"
               href="">About Me</a> <a class="navigation__link"
               href="">b4twefds</a> <a class="navigation__link"
-              href="">cgfd</a> <a class="navigation__link"
+              href="#portfolio-section">Portfolio</a> <a class="navigation__link"
               href="">dfgdvxc</a>
         </li>
       </ul>
@@ -123,7 +126,8 @@
         </div>
       </div>
     </section>
-    <section class="prices-section">
+    <section class="prices-section"
+             id="portfolio-section">
       <div class="utility-center-text utility-margin-bottom-large">
         <h2 class="secondary-heading">Portfolio</h2>
       </div>
@@ -181,8 +185,7 @@
                      target="_blank">github</a></p>
                   <p class="card__action-heading">or</p>
                 </div><a class="btn btn--light"
-                     href="https://scrummish.github.io/Space-Invaders-2018/"
-                     target="__blank">Play Here</a>
+                     href="#pop-up">Play Here</a>
               </div>
             </div>
           </div>
