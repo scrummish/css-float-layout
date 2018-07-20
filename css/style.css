@@ -1,3 +1,12 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   Normal styles apply
+1800px + :      Big desktop
+
+Order: Base & typography > general layout & grid > page layout > components
+*/
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -31,6 +40,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
