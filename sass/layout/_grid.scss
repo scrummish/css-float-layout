@@ -2,17 +2,33 @@
     max-width: $grid-width;
     margin: 0 auto;
 
-    &:not(:last-child) {
+    &:not(:last-child) { // Every row minus the last one
         margin-bottom: $row-space;
+        
+        @include responsive(tablet-portrait) { 
+            margin-bottom: $row-space-small;  
+        }
     }
-
+    @include responsive(tablet-portrait) { 
+        max-width: 50rem;  
+        padding: 0 3rem;
+    }
     @include clearFix;
 
-    [class^="col-"] {
+    [class^="col-"] { // Every column 
         float: left;
 
-        &:not(:last-child) {
+        &:not(:last-child) { // Except the last column
             margin-right: $column-space;
+
+            @include responsive(tablet-portrait) { 
+                margin-right: 0;
+                margin-bottom: $row-space-small;
+            }
+        }
+
+        @include responsive(tablet-portrait) { 
+            width: 100% !important;
         }
     }
 

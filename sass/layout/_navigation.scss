@@ -11,6 +11,16 @@
         z-index: 102;
         text-align: center;
         cursor: pointer;
+
+        @include responsive(tablet-portrait) {
+            top: 3rem;
+            right: 3rem;
+        }
+
+        @include responsive(phone) {
+            top: 2rem;
+            right: 2rem;
+        }
     }
     &__checkbox {
         display: none;
@@ -25,6 +35,16 @@
         right: 6rem;
         background-image: radial-gradient($color-purple-solid, $color-purple-dark);
         transition: transform .8s;
+
+        @include responsive(tablet-portrait) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+
+        @include responsive(phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
 
     }
     &__nav {

@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    height: 90vh;
+    height: 95vh;
     background-image: linear-gradient(
         to left top, 
         rgba($color-purple-dark, 0.8),  
@@ -11,17 +11,18 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
 
-     &__logo-container {
+    @include responsive(phone) { 
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-container {
         position: absolute;
         top: 2rem;
         left: 2rem;
     } 
 
-     &__logo {
-        height: 4rem;
-    } 
-
-     &__text-and-button-box {
+    &__text-and-button-box {
         @include positionAbsoluteCenter;
         color: $color-light-blue;
     } 
