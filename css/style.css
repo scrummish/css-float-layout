@@ -94,11 +94,15 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #5643fa, #110529);
+  background-image: linear-gradient(to right, #AA56FF, #110529);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
+  .secondary-heading--pink {
+    background-image: linear-gradient(to right, #ff0790, #ad005f); }
+  .secondary-heading--blue {
+    background-image: linear-gradient(to right, #1B94FB, #5643fa); }
   @media only screen and (max-width: 56.25em) {
     .secondary-heading {
       font-size: 3rem; } }
@@ -194,10 +198,22 @@ body {
     background-color: #fff; }
 
 .btn--purple {
-  background-image: linear-gradient(to right, #5643fa, #110529);
+  background-image: linear-gradient(to right, #AA56FF, #110529);
   color: #fff; }
   .btn--purple::after {
-    background-image: linear-gradient(to right, #5643fa, #110529); }
+    background-image: linear-gradient(to right, #AA56FF, #110529); }
+
+.btn--pink {
+  background-image: linear-gradient(to right, #ff0790, #ad005f);
+  color: #fff; }
+  .btn--pink::after {
+    background-image: linear-gradient(to right, #ff0790, #ad005f); }
+
+.btn--blue {
+  background-image: linear-gradient(to right, #1B94FB, #5643fa);
+  color: #fff; }
+  .btn--blue::after {
+    background-image: linear-gradient(to right, #1B94FB, #5643fa); }
 
 .btn::after {
   content: "";

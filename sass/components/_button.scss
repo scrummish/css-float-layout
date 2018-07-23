@@ -46,11 +46,29 @@
     }
 
     &--purple {
-        background-image: linear-gradient(to right, $color-blue-dark, $color-purple-dark);
+        background-image: linear-gradient(to right, $color-purple-solid, $color-purple-dark);
         color: $color-white;
 
         &::after {
-            background-image: linear-gradient(to right, $color-blue-dark, $color-purple-dark);;
+            background-image: linear-gradient(to right, $color-purple-solid, $color-purple-dark);;
+        } 
+    }
+
+    &--pink {
+        background-image: linear-gradient(to right, $color-pink, $color-pink-dark);
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right, $color-pink, $color-pink-dark);;
+        } 
+    }
+
+    &--blue {
+        background-image: linear-gradient(to right, $color-blue, $color-blue-dark);
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right, $color-blue, $color-blue-dark);;
         } 
     }
 

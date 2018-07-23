@@ -42,11 +42,19 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-blue-dark, $color-purple-dark);
+    background-image: linear-gradient(to right, $color-purple-solid, $color-purple-dark);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    &--pink {
+        background-image: linear-gradient(to right, $color-pink, $color-pink-dark);
+    }
+
+    &--blue {
+        background-image: linear-gradient(to right, $color-blue, $color-blue-dark);
+    }
 
     @include responsive(tablet-portrait) { 
         font-size: 3rem;
