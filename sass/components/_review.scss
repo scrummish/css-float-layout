@@ -1,27 +1,42 @@
 .review {
-    width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color-black, .1);
-    border-radius: 3px;
-    background-color: rgba($color-white, .8);
-    padding: 6rem;
-    padding-left: 9rem;
-    font-size: $font-size-default;
-    transform: skewX(-12deg);
+  @include responsive(tablet-portrait) {
+    padding: 4rem 4rem 4rem 7rem;
+    width: 100%;
+  }
+  @include responsive(phone) {
+    transform: skewX(0);
+  }
 
-    &__text {
-        transform: skewX(12deg);
+  background-color: rgba($color-white, .8);
+  border-radius: 3px;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  font-size: $font-size-default;
+  margin: 0 auto;
+  padding: 6rem 6rem 6rem 9rem;
+  transform: skewX(-12deg);
+  width: 75%;
+
+  &__text {
+    @include responsive(phone) {
+      transform: skewX(0);
     }
+    transform: skewX(12deg);
+  }
 
-    &__shape {
+  &__shape {
+    @include responsive(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+    background-color: red;
+    clip-path: circle(50% at 50% 50%);
         width: 15rem;
         height: 15rem;
-        background-color: red;
+        
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
     }
