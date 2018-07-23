@@ -8,8 +8,9 @@
     transition: transform .3s;
     min-height: 30rem;
 
-    &__text {
-        
+    @include responsive(tablet-portrait) {
+        padding: 2rem;
+        min-height: 20rem;
     }
 
     &:hover {
@@ -22,5 +23,9 @@
         background-image: linear-gradient(to right, $color-purple, $color-purple-dark);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include responsive(tablet-portrait) {
+            margin: 0;
+        }
     }
 }

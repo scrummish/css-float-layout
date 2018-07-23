@@ -270,7 +270,7 @@ body {
           top: 0;
           left: 0;
           transform: scale(1.4);
-          z-index: 100; } }
+          z-index: 50; } }
     .composition__photo:hover {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4em rgba(0, 0, 0, 0.3);
@@ -288,6 +288,10 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   min-height: 30rem; }
+  @media only screen and (max-width: 56.25em) {
+    .info-box {
+      padding: 2rem;
+      min-height: 20rem; } }
   .info-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .info-box__icon {
@@ -296,6 +300,9 @@ body {
     background-image: linear-gradient(to right, rgba(170, 86, 255, 0.715), #110529);
     -webkit-background-clip: text;
     color: transparent; }
+    @media only screen and (max-width: 56.25em) {
+      .info-box__icon {
+        margin: 0; } }
 
 .card {
   position: relative;
@@ -784,12 +791,12 @@ body {
     transform: skewY(3.36deg); }
   @media only screen and (max-width: 56.25em) {
     .more-info-section {
-      padding: 15rem 0; } }
+      padding: 10rem 0; } }
 
 .prices-section {
   background-color: #f7f7f7;
   padding: 20rem 0 15rem 0;
-  margin-top: -7rem; }
+  margin-top: -10rem; }
   @media only screen and (max-width: 56.25em) {
     .prices-section {
       padding: 15rem 0 10rem 0; } }
