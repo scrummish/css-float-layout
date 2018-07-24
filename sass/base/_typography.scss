@@ -11,9 +11,15 @@ body {
   white-space: nowrap;
 
   &--main {
+
     @include responsive(phone) {
       font-size: 5rem;
       letter-spacing: 1rem;
+    }
+
+    @include responsive(small-phone) {
+       font-size: 4rem;
+       letter-spacing: .5rem;
     }
 
     animation: fadeInRight 1s ease-out;
@@ -21,16 +27,24 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: .9rem;
-
-    @media only screen and (max-width: 420px) {
-      font-size: 3rem;
-    }
   }
 
   &--sub {
-    @include responsive(phone) {
-      letter-spacing: .5rem;
+    @include responsive(tablet-small) {
+      font-size: 1.4rem;
+      letter-spacing: .8rem;
     }
+    @include responsive(phone) {
+      letter-spacing: .6rem;
+    }
+    @include responsive(medium-phone) {
+      letter-spacing: .38rem;
+    }
+    @include responsive(small-phone) {
+       letter-spacing: .2rem;
+       font-size: 1rem;
+    }
+    
     animation: fadeInLeft 1s ease-out;
     display: block;
     font-size: $font-size-default;
