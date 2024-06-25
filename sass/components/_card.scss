@@ -22,11 +22,11 @@
         }
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-blue, $color-blue-dark), url(../img/esports.jpg);
+            background-image: linear-gradient(to right bottom, $color-purple-solid, $color-purple-solid-dark), url(../img/esports.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-purple-solid, $color-purple-solid-dark), url(../img/space.jpg);
+            background-image: linear-gradient(to right bottom, $color-blue, $color-blue-dark ), url(../img/space.jpg);
         }
 
         &--3 {
@@ -52,11 +52,11 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-blue,.85), rgba($color-blue-dark,.85));
+            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.85), rgba($color-purple-solid-dark,.85));
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-purple-solid,.85), rgba($color-purple-solid-dark,.85));
+            background-image: linear-gradient(to right bottom, rgba($color-blue,.85), rgba($color-blue-dark,.85));
         }
 
         &--3 {

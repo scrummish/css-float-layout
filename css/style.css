@@ -286,11 +286,11 @@ body {
       transform: translate(0, -50%);
       width: 100%; }
     .card__pic--1 {
-      background-image: linear-gradient(to right bottom, #1B94FB, #5643fa), url(../img/esports.jpg); }
+      background-image: linear-gradient(to right bottom, #AA56FF, #6300c7 ), url(../img/esports.png); }
     .card__pic--2 {
-      background-image: linear-gradient(to right bottom, #AA56FF, #6300c7), url(../img/space.jpg); }
+      background-image: linear-gradient(to right bottom, #1B94FB, #5643fa), url(../img/space.jpg); }
     .card__pic--3 {
-      background-image: linear-gradient(to right bottom, #ff0790, #ad005f), url(../img/realestate.jpg); }
+      background-image: linear-gradient(to right bottom, #ff0790, #ad005f), url(../img/space.avif); }
   .card__heading {
     font-size: 2.8rem;
     position: absolute;
@@ -305,9 +305,9 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.85), rgba(86, 67, 250, 0.85)); }
     .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(27, 148, 251, 0.85), rgba(86, 67, 250, 0.85)); }
+    .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(170, 86, 255, 0.85), rgba(99, 0, 199, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(255, 7, 144, 0.85), rgba(173, 0, 95, 0.85)); }
@@ -339,9 +339,9 @@ body {
       background-color: #fff; }
     .card__face--back {
       transform: rotateY(180deg); }
-      .card__face--back-1 {
-        background: linear-gradient(to right bottom, #1B94FB, #5643fa); }
       .card__face--back-2 {
+        background: linear-gradient(to right bottom, #1B94FB, #5643fa); }
+      .card__face--back-1 {
         background: linear-gradient(to right bottom, #AA56FF, #6300c7); }
       .card__face--back-3 {
         background: linear-gradient(to right bottom, #ff0790, #ad005f); }
